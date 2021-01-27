@@ -1,0 +1,16 @@
+{
+    "name": "swrpg-status-icons",
+    "title": "Star Wars RPG Status Icons",
+    "description": "",
+    "author": "Kihira",
+    "version": "1.0.0",
+    "minimumCoreVersion": "0.7.0",
+    "esmodules": [ "scripts/main.js" ],
+    "languages": [
+        {
+          "lang": "en",
+          "name": "English",
+          "path": "lang/en.json"
+        }
+    ]
+}

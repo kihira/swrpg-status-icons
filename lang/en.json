@@ -1,0 +1,20 @@
+{
+    "SOTB.AddAbility": "Add Ability",
+    "SOTB.AddBoost": "Add Boost",
+    "SOTB.AddChallenge": "Add Challenge",
+    "SOTB.AddDifficulty": "Add Difficulty",
+    "SOTB.AddProficiency": "Add Proficiency",
+    "SOTB.AddSetback": "Add Setback",
+    "SOTB.DowngradeAbility": "Downgrade Ability",
+    "SOTB.DowngradeDifficulty": "Downgrade Difficulty",
+    "SOTB.ReduceAbility": "Reduce Ability",
+    "SOTB.ReduceBoost": "Reduce Boost ",
+    "SOTB.ReduceChallenge": "Reduce Challenge",
+    "SOTB.ReduceDifficulty": "Reduce Difficulty",
+    "SOTB.ReduceProficiency": "Reduce Proficiency",
+    "SOTB.ReduceSetback": "Reduce Setback",
+    "SOTB.UpgradeAbility": "Upgrade Ability",
+    "SOTB.UpgradeDifficulty": "Upgrade Difficulty",
+    "SOTB.NoAction": "No Action",
+    "SOTB.NoManeuver": "No Maneuver"
+}
