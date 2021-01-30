@@ -1,8 +1,8 @@
 Hooks.once("init", async function ()
 {
     game.settings.register("swrpg-status-icons", "disableStatusEffectBackground", {
-        name: "Disable Status Effect Icon Background",
-        hint: "",
+        name: game.i18n.localize("swrpg-status-icons.disablestatusEffectBackground.name"),
+        hint: game.i18n.localize("swrpg-status-icons.disablestatusEffectBackground.hint"),
         scope: "world",
         config: true,
         default: true,
@@ -32,92 +32,92 @@ Hooks.once("init", async function ()
 CONFIG.statusEffects.push(
     {
         id: "Add Ability",
-        label: "SOTB.AddAbility",
+        label: "swrpg-status-icons.AddAbility",
         icon: "modules/swrpg-status-icons/images/markers/AddAbility.png"
     },
     {
         id: "Add Boost",
-        label: "SOTB.AddBoost",
+        label: "swrpg-status-icons.AddBoost",
         icon: "modules/swrpg-status-icons/images/markers/AddBoost.png"
     },
     {
         id: "Add Challenge",
-        label: "SOTB.AddChallenge",
+        label: "swrpg-status-icons.AddChallenge",
         icon: "modules/swrpg-status-icons/images/markers/AddChallenge.png"
     },
     {
         id: "Add Difficulty",
-        label: "SOTB.AddDifficulty",
+        label: "swrpg-status-icons.AddDifficulty",
         icon: "modules/swrpg-status-icons/images/markers/AddDifficulty.png"
     },
     {
         id: "Add Proficiency",
-        label: "SOTB.AddProficiency",
+        label: "swrpg-status-icons.AddProficiency",
         icon: "modules/swrpg-status-icons/images/markers/AddProficiency.png"
     },
     {
         id: "Add Setback",
-        label: "SOTB.AddSetback",
+        label: "swrpg-status-icons.AddSetback",
         icon: "modules/swrpg-status-icons/images/markers/AddSetback.png"
     },
     {
         id: "Downgrade Ability",
-        label: "SOTB.DowngradeAbility",
+        label: "swrpg-status-icons.DowngradeAbility",
         icon: "modules/swrpg-status-icons/images/markers/DowngradeAbility.png"
     },
     {
         id: "Downgrade Difficulty",
-        label: "SOTB.DowngradeDifficulty",
+        label: "swrpg-status-icons.DowngradeDifficulty",
         icon: "modules/swrpg-status-icons/images/markers/DowngradeDifficulty.png"
     },
     {
         id: "Reduce Ability",
-        label: "SOTB.ReduceAbility",
+        label: "swrpg-status-icons.ReduceAbility",
         icon: "modules/swrpg-status-icons/images/markers/ReduceAbility.png"
     },
     {
         id: "Reduce Boost",
-        label: "SOTB.ReduceBoost",
+        label: "swrpg-status-icons.ReduceBoost",
         icon: "modules/swrpg-status-icons/images/markers/ReduceBoost.png"
     },
     {
         id: "Reduce Challenge",
-        label: "SOTB.ReduceChallenge",
+        label: "swrpg-status-icons.ReduceChallenge",
         icon: "modules/swrpg-status-icons/images/markers/ReduceChallenge.png"
     },
     {
         id: "Reduce Difficulty",
-        label: "SOTB.ReduceDifficulty",
+        label: "swrpg-status-icons.ReduceDifficulty",
         icon: "modules/swrpg-status-icons/images/markers/ReduceDifficulty.png"
     },
     {
         id: "Reduce Proficiency",
-        label: "SOTB.ReduceProficiency",
+        label: "swrpg-status-icons.ReduceProficiency",
         icon: "modules/swrpg-status-icons/images/markers/ReduceProficiency.png"
     },
     {
         id: "Reduce Setback",
-        label: "SOTB.ReduceSetback",
+        label: "swrpg-status-icons.ReduceSetback",
         icon: "modules/swrpg-status-icons/images/markers/ReduceSetback.png"
     },
     {
         id: "Upgrade Ability",
-        label: "SOTB.UpgradeAbility",
+        label: "swrpg-status-icons.UpgradeAbility",
         icon: "modules/swrpg-status-icons/images/markers/UpgradeAbility.png"
     },
     {
         id: "Upgrade Difficulty",
-        label: "SOTB.UpgradeDifficulty",
+        label: "swrpg-status-icons.UpgradeDifficulty",
         icon: "modules/swrpg-status-icons/images/markers/UpgradeDifficulty.png"
     },
     {
         id: "No Action",
-        label: "SOTB.NoAction",
+        label: "swrpg-status-icons.NoAction",
         icon: "modules/swrpg-status-icons/images/markers/NoAction.png"
     },
     {
         id: "No Manuever",
-        label: "SOTB.NoManeuver",
+        label: "swrpg-status-icons.NoManeuver",
         icon: "modules/swrpg-status-icons/images/markers/NoManeuver.png"
     },
 );
