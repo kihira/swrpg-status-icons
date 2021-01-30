@@ -1,14 +1,33 @@
-Token.prototype._drawEffect = async function(src, i, bg, w, tint) {
-    let tex = await loadTexture(src);
-    let icon = this.effects.addChild(new PIXI.Sprite(tex));
-    icon.width = icon.height = w;
-    const nr = Math.floor(this.data.height * 5);
-    icon.x = Math.floor(i / nr) * w;
-    icon.y = (i % nr) * w;
-    if ( tint ) icon.tint = tint;
-    //bg.drawRoundedRect(icon.x + 1, icon.y + 1, w - 2, w - 2, 2);
-    this.effects.addChild(icon);
-  }
+Hooks.once("init", async function ()
+{
+    game.settings.register("swrpg-status-icons", "disableStatusEffectBackground", {
+        name: "Disable Status Effect Icon Background",
+        hint: "",
+        scope: "world",
+        config: true,
+        default: true,
+        type: Boolean,
+        onChange: (rule) => window.location.reload(),
+    });
+
+
+    if (game.settings.get("swrpg-status-icons", "disableStatusEffectBackground"))
+    {
+        // Effectively hook at the end of the drawEffects call to remove the background before it's actually rendered
+        const originalDrawEffect = Token.prototype.drawEffects;
+        
+        Token.prototype.drawEffects = function()
+        {
+            originalDrawEffect.call(this);
+
+            // If there are any effects being drawn, the first display object in effects will always be the background 
+            if (this.effects.children.length > 0)
+            {
+                this.effects.removeChildAt(0);
+            }
+        };
+    }
+});
 
 CONFIG.statusEffects.push(
     {
